@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Un univers rien que pour toi</title>
+    <meta
+      name="description"
+      content="Un univers rien que pour toi - une lettre de Saint-Valentin interactive et romantique."
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Floating hearts background -->
+    <div class="hearts-container" aria-hidden="true"></div>
+
+    <!-- Background music -->
+    <audio id="music-soft" loop>
+      <!-- Remplace le fichier ci-dessous par une musique douce qu'elle aime -->
+      <source src="music/music.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="music-intense" loop>
+      <!-- Remplace le fichier ci-dessous par une version plus intense -->
+      <source src="music/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header class="site-header">
+      <div class="logo-title">
+        <span class="logo-heart"></span>
+        <span class="logo-text">Un univers que pour toi</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#histoire">Notre histoire</a>
+        <a href="#pourquoi">Pourquoi toi</a>
+        <a href="#carte">Galerie de photos</a>
+        <a href="#final">Message final</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="accueil" class="section section-hero">
+        <div class="hero-content fade-in-on-load">
+          <p class="hero-overline">Joyeuse Saint-Valentin mon amour !</p>
+          <h1 class="hero-title">
+            Que pour toi,
+            <span class="hero-name">mon cœur</span>
+          </h1>
+          <p class="hero-text">
+            Ce site n’a qu’un seul but :<br />
+            <span class="highlight"
+              >Te montrer à quel point je tiens à toi</span
+            >
+          </p>
+
+          <div class="hero-actions">
+            <button id="btn-start-music" class="btn primary">
+              Lancer la musique
+            </button>
+            <a href="#histoire" class="btn ghost">
+              Découvrir notre histoire
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="histoire" class="section section-story">
+        <div class="section-inner">
+          <h2 class="section-title">Notre histoire</h2>
+          <p class="section-subtitle">
+            Quelques morceaux de nous, gravés pour toujours.
+          </p>
+
+          <div class="story-grid">
+            <article class="story-card reveal-on-scroll">
+              <h3>Le début de nous</h3>
+              <p class="story-meta">Officialisation : le 29 octobre 2024</p>
+              <p class="story-text">
+                Le
+                <span class="emphasis">29/10/2024</span>, je t'ai fait ma demande dans le parc à Metz, 
+                là où il y avait une vue dégagée sur la cathédrale et la tranquillité, la nature et la paix.
+              </p>
+            </article>
+
+            <article class="story-card reveal-on-scroll">
+              <h3>Un souvenir inoubliable</h3>
+              <p class="story-meta">Premier grand souvenir </p>
+              <p class="story-text">
+                Quand j'y repense, 
+                <span class="emphasis">on passé une semaine ensemble, je t'ai montrer les différents spots de Metz, les endroits que j'ai trouvé les plus beaux</span>
+                On est allé au Wave, on a mangé dans un restaurant local, on a fait le tour des magasins du coin et j'ai tellement apprécié passer du temps avec toi.
+              </p>
+            </article>
+
+            <article class="story-card reveal-on-scroll story-photo">
+              <h3>Nous deux</h3>
+              <p class="story-meta">Un moment inoubliable</p>
+              <div class="story-photo-frame">
+                <figure>
+                <img src="assets/nous.jpg" alt="Nous deux">
+                <figcaption class="story-photo-caption" style="text-align: center;">Parc Asterix</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article class="story-card reveal-on-scroll">
+              <h3>Une petite anecdote</h3>
+              <p class="story-meta">J'avais prévu d'écrire un lettre mais je croyais que ça n'était pas assez représentatif de ce que j'éprouve pour toi</p>
+              <p class="story-text">
+                J'ai pensé qu'un site que tu pouvais sauvegarder et revoir à la demande serait plus approprié
+                <span class="emphasis">J'ai commencé à concevoir le site dans le train de retour vers Metz</span>.
+                J'ai été tellement enthousiaste de voir ta réaction lorsque je te montrerai le site.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pourquoi" class="section section-why">
+        <div class="section-inner">
+          <h2 class="section-title">Pourquoi je t’aime</h2>
+          <p class="section-subtitle">
+            Ce ne sont que quelques raisons parmi tant d'autres.
+          </p>
+
+          <div class="why-grid">
+            <div class="why-card flip-card reveal-on-scroll">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Ta douceur</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    Tu es si douce et gentille, j'ai l'impression d'etre dans les nuages avec toi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="why-card flip-card reveal-on-scroll">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Ta voix</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    Je n'ai pas toujours été fan mais j'ai appris à l'aimer grâce à toi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="why-card flip-card reveal-on-scroll">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Ta personnalité</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                      Tu es unique en ton genre et c'est ce qui fait ton charme.
+                      Tu te démarques parmis tant d'autres et c'est ce que je j'admire le plus chez toi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="why-card flip-card reveal-on-scroll">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Ce que tu m’apportes</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    Tu m'apportes du calme lorsque je suis entouré de bruit, 
+                    de la clarté lorsqu'il fait sombre,
+                    du réconfort lorsque je suis triste, et
+                    de l'amour lorsque je n'ai pas assez de confiance en moi.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carte" class="section section-carte">
+        <div class="section-inner reveal-on-scroll">
+          <h2 class="section-title">Galerie de photos</h2>
+          <p class="section-subtitle">
+            Quelques photos de nous, gravées pour toujours.
+          </p>
+          <div class="carte-grid">
+            <div class="carte-card">
+              <div class="carte-card-frame">
+                <img src="assets/img1.jpg" alt="Photo de nous">
+              </div>
+            </div>
+            <div class="carte-card">
+              <div class="carte-card-frame">
+                <img src="assets/top.jpg" alt="Photo de nous">
+              </div>
+            </div>
+            <div class="carte-card">
+              <div class="carte-card-frame">
+                <img src="assets/marché.jpg" alt="Photo de nous">
+              </div>
+            </div>
+            <div class="carte-card">
+              <div class="carte-card-frame">
+                <img src="assets/escalier.jpg" alt="Photo de nous">
+              </div>
+            </div>
+            <div class="carte-card">
+              <div class="carte-card-frame">
+                <img src="assets/nous.jpg" alt="Photo de nous">
+              </div>
+            </div>
+            <div class="carte-card">
+              <div class="carte-card-frame">
+                <img src="assets/hotel.jpg" alt="Photo de nous">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="final" class="section section-final">
+        <div class="section-inner reveal-on-scroll final-content">
+          <h2 class="section-title">Mon message pour toi</h2>
+
+          <div class="final-message-box">
+            <p>
+             Des mots sincères, des actions concrètes,<br />
+             Je ne te vends pas du rêve, je te promet<br />
+             Que mon amour pour toi est plus que réel.
+            </p>
+            <p>
+              Je te promets d’être là,<br />
+              dans les beaux jours comme dans les tempêtes,<br />
+              d'etre fort pour nous deux lorsque tu te sens faible,<br />
+              de te chérir et te protéger quoi qu'il advienne.<br />
+            </p>
+            <p class="final-highlight">
+              Joyeuse Saint-Valentin<br />
+              Merci d’être toi.
+            </p>
+          </div>
+
+          <p class="final-signature">
+            À bientôt,<br />
+            <span class="emphasis">Sysy</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Fait avec amour, juste pour toi -
+        <span class="emphasis">Un univers rien qu'à toi</span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
